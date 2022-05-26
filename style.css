@@ -99,7 +99,10 @@ table {
 }
 
 .content {
-    margin: 60px 0;
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .sidebar {
@@ -127,4 +130,130 @@ table {
 
 .sidebar a:hover {
     background: #EAF0ED;
+}
+
+.product {
+    display: flex;
+    width: 620px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photo {
+    position: relative;
+}
+
+.photo p {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    color: #EAF0ED;
+    writing-mode: vertical-lr;
+    background: #3F5D45;
+    padding: 12px 10px;
+    letter-spacing: 5px;
+}
+
+.favorite {
+    position: absolute;
+    top: 19px;
+    right: 22px;
+}
+
+.info {
+    width: 300px;
+    display: flex;
+    font-size: 20px;
+}
+
+.info p {
+    box-sizing: border-box;
+    width: 173px;
+    padding: 18px;
+    text-align: center;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+    font-weight: lighter;
+}
+
+.info span {
+    box-sizing: border-box;
+    width: 127px;
+    font-weight: bold;
+    padding: 18px;
+    text-align: center;
+    border-right: 1px solid #EAF0ED;
+}
+
+.item h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item a {
+    display: block;
+    color: #3F5D45;
+    background: #EAF0ED;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.item a:hover {
+    color: #EAF0ED;
+    background: #3F5D45;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 0;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination a{
+    box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #3F5D45;
+    text-align: center;
+    font-weight: lighter;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #EAF0ED;
+    border-right: 0;
+}
+
+#right-border {
+    border-right: 1px solid #EAF0ED;
+}
+
+.pagination a:hover {
+    background: #EAF0ED;
+}
+
+.pagination a h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    color: #EAF0ED;
+    background: #3F5D45;
+    font-weight: bold;
 }
